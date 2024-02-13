@@ -19,7 +19,7 @@
 
 Добавлен Docker для удобного тестирования, суперпользователь создается при сборке образа.
 
-Спецификация: [text](https://minesweeper-test.studiotg.ru/swagger/)
+[Спецификация:](https://minesweeper-test.studiotg.ru/swagger/)
 
 #### Стек
 Стандартные библиотеки Python.
@@ -37,8 +37,7 @@ Django REST framework
 
 `docker-compose up`
 
-После запуска контейнеров тестируем по адресу:
-[text](https://minesweeper-test.studiotg.ru/)
+После запуска контейнеров тестируем по [адресу](https://minesweeper-test.studiotg.ru/)
 
 В поле 'URL API (можно относительный путь)' передаем: 
 http://127.0.0.1:8000
