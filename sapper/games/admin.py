@@ -7,7 +7,7 @@ from .models import Game
 
 @admin.register(Game)
 class OrganizationAdmin(admin.ModelAdmin):
-    list_display = ('game_id', 'width', 'height', 'mines_count', 'completed', 'field')
-    fields = ('game_id', 'width', 'height', 'mines_count', 'completed', 'field')
+    list_display = ('game_id', 'width', 'height', 'mines_count', 'completed', 'field', 'mine_field')
+    fields = ('game_id', 'width', 'height', 'mines_count', 'completed', 'field', 'mine_field')
 
-    readonly_fields = ('game_id', 'completed', 'field')
+    readonly_fields = ('game_id', 'completed', 'field', 'mine_field')
