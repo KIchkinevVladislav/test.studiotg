@@ -1,5 +1,3 @@
-
-import random
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.generics import CreateAPIView
@@ -76,7 +74,7 @@ class TurnAPIView(APIView):
         if self.check_win_game(game):
             game.completed = True
             game.save()
-            return Response({'message': 'Игра завершена. Вы открыли все ячейки, не занятые минами!', 'field': game.field}, status=status.HTTP_200_OK)
+            return Response({'message': 'Вы победили', 'field': game.field}, status=status.HTTP_200_OK)
         
         # Возвращаем обновленные данные об игре
         serializer = GameSerializer(game)
