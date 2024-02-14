@@ -81,6 +81,7 @@ class TurnAPIView(APIView):
         serializer = GameSerializer(game)
         return Response(serializer.data)
     
+    
     def open_adjacent_cells(self, game, row, col):
         # Открываем ячейки рядом с указанной, если они не заняты минами
         # Рекурсивно открываем смежные ячейки с нулевым значением
